@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/535168dafd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="https://jt227b.github.io/Portfolio/assets/image/cover.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  <!-----<i class="fa-solid fa-circle-xmark"></i>-->
+                </ul>
+         <!--------<i class="fa-solid fa-bars"></i> -->
+            </nav>
+            <div class="header-text">
+                <p><strong>Intern</strong></p>
+                <h1>Hi, I am <span><strong>Rishubh Gandhi</strong></span> from India</h1>
+            </div>
+        </div>
+    </div>
+<!-------------------------------------------about------------------------------------------------->   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col_1">
+                    <img src="alaminxyz.gif" alt="working" width="400" height="300">
+                </div>
+                <div class="col_2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello! I am <span class="highlight">Rishubh Gandhi</span>. I have worked as an <span class="highlight">Intern</span> on a seven-segment display project at <span class="highlight">NPL</span>. I have also done significant work in <span class="highlight">DSA</span> on <span class="highlight">LeetCode</span>. Currently, I am interning in <span class="highlight">MERN Stack</span> at <span class="highlight">Xarterian</span> in <span class="highlight">Gurgaon</span>.</p>
+                    <div class="tab_title">
+                        <p class="tab_link active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_content active_tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab_content" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Seven segment display using Deep Learning NPL</li>
+                            <li><span>2023-2024</span><br>Mern Stack Intern at Xarterian,Gurgaon</li>
+                            <li><span>2024-</span><br>Working</li>
+                        </ul>
+                    </div>
+                    <div class="tab_content" id="education">
+                        <ul>
+                            <li><span>2005-2017</span><br>Jesus Mary Joseph</li>
+                            <li><span>2017-2019</span><br>St. Cecilia Public</li>
+                            <li><span>2020-2024</span><br>Bharati Vidyapeeth</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------------------services--------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My services</h1>
+        <div class="service_list">
+            <div>
+                <i class="fa-solid fa-web-awesome"></i>
+                <h2>Web design</h2>
+                <p style="font-weight: lighter;">creation and maintenance of websites, focusing on aesthetics, functionality, and user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>UI/UX design</h2>
+                <p style="font-weight: lighter;">creating user interfaces (UI) and ensuring a positive user experience (UX).</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App design</h2>
+                <p style="font-weight: lighter;">creating the visual layout and user interface for mobile applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+    </div>
+</div>
+<!----------------------------------------Portfolio----------------------------------------------------------------->
+<div id="portfolio">'
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work_list">
+            <div class="work">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.4gxx_SYpn-2aGO5J8lh_FwHaE9?rs=1&pid=ImgDetMain" height="300px">
+                <div class="layer">
+                    <h3>Social Media app</h3>
+                    <p>The app connects you to People around the world.Install from Play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://www.thehrbooth.co.uk/wp-content/uploads/2022/09/maxim-ilyahov-0aRycsfH57A-unsplash-scaled.jpg" height="300px">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>enables you to stream, download, and organize music with personalized recommendations and social features</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://th.bing.com/th/id/R.8ae3556f5bb68f7ca60abe3e972d34b8?rik=swDn38y1IWchqQ&riu=http%3a%2f%2fserendipitylabs.com%2fwp-content%2fuploads%2fbeing-smart-with-your-smartphone.jpg&ehk=WX8BH%2f6cLvutF3o3Gy7f%2f%2fyQM2z9utxbM5WF%2b0oB4Is%3d&risl=&pid=ImgRaw&r=0" height="300px">
+                <div class="layer">
+                    <h3>Shopping app</h3>
+                    <p>The app allows you to browse, purchase, and track orders of products directly from their mobile devices.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!-----------------------------------------------------contact------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rishabhgandhi1507@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9625258262</p>
+                <div class="social_icon">
+                    <a href="https://github.com/Rish150"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/debro1507"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/debroglie1507/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rishubh-gandhi-31656b219/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="C:\Users\risha\Downloads\Rishubh (1) (1) (2).pdf" download target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name">
+                    <input type="email" name="Email" placeholder="Your email">
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>My first ever  <i class="fa-solid fa-heart"></i> portfolio</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab_link");
+    var tabcontents = document.getElementsByClassName("tab_content");
+    
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active_link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active_tab");
+        }
+        document.getElementById(tabname).classList.add("active_tab");
+        event.currentTarget.classList.add("active_link");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxHDBayPBu4jSy0ntB9zlQGtckpmTj40SSFpdBgBUwSRzQ1mFXNMgOp7sS0DvbeOiQe/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTM=""
+            },5000ms)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

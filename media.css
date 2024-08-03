@@ -1,0 +1,151 @@
+/* CSS for small screens */
+@media only screen and (max-width: 600px) {
+    @keyframes hamburger_puls {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(1.4);
+        }
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .hamburger .bar{
+        display: block;
+        font-size: 8vw;
+        margin-left: 15vw;
+        cursor: pointer;
+        color: black;
+        
+    }
+
+    nav ul {
+        /* background-color: #ff004f; */
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 0;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #sidemenu i {
+        display: contents;
+    }
+
+    #header {
+        background-image: url("https://tse1.mm.bing.net/th/id/OIP.DBd_H2Bey8RJUtOWXmvIhQHaJ3?rs=1&pid=ImgDetMain");
+    }
+
+    .header-text {
+        margin-bottom: 60%;
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .col_1,
+    .col_2 {
+        flex-basis: 100%;
+    }
+
+    .col_1 {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .col_2 {
+        font-size: 14px;
+    }
+
+    .tab_link {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .service_list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+}
+
+/* CSS for large screens */
+@media only screen and (min-width: 600px) {
+    @keyframes hamburger_puls {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(1.4);
+        }
+    }
+
+    .hamburger .bar{
+        display: block;
+        font-size: 25px;
+        background-color: red;
+    }
+
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    #header .nav-list ul li {
+        display: inline-block;
+    }
+
+    #header .nav-list ul li a {
+        font-size: 1.5rem;
+    }
+
+    #header .nav-list ul a:after {
+        display: none;
+    }
+}

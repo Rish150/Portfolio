@@ -11,38 +11,34 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./media.css">
     <script src="https://kit.fontawesome.com/535168dafd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <div id="main">
-
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="https://jt227b.github.io/Portfolio/assets/image/cover.png" class="logo" alt="Logo">
-
                     <ul id="sidemenu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    
-                    <div class="hamburger">
-                        <a class="bar"><i class="fa-solid fa-bars"></i></a>
-                    </div>
-                </nav>
 
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                        <!-----<i class="fa-solid fa-circle-xmark"></i>-->
+
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                        <!--------<i class="fa-solid fa-bars"></i> -->
+                    </ul>
+                </nav>
                 <div class="header-text">
-                    <p><strong>Intern</strong></p>
                     <h1>Hi, I am <span><strong>Rishubh Gandhi</strong></span> from India</h1>
                 </div>
             </div>
         </div>
-
         <!-------------------------------------------about------------------------------------------------->
         <div id="about">
             <div class="container">
@@ -52,43 +48,61 @@
                     </div>
                     <div class="col_2">
                         <h1 class="subtitle">About Me</h1>
-                        <p>Hello! I am <span class="highlight">Rishubh Gandhi</span>. I have worked as an <span
-                                class="highlight">Intern</span> on a seven-segment display project at <span
-                                class="highlight">NPL</span>. I have also done significant work in <span
-                                class="highlight">DSA</span> on <span class="highlight">LeetCode</span>. Currently, I am
-                            interning in <span class="highlight">MERN Stack</span> at <span
-                                class="highlight">Xarterian</span> in <span class="highlight">Gurgaon</span>.</p>
+                        <p>Hello! I am <span class="highlight">Rishubh Gandhi</span>, a passionate Software Engineering
+                            student at <span class="highlight">Bharati Vidyapeeth College of Engineering</span>. I
+                            specialize in <span class="highlight">frontend development</span> and have worked on several
+                            projects using <span class="highlight">HTML</span>, <span class="highlight">CSS</span>,
+                            <span class="highlight">JavaScript</span>, and <span class="highlight">React</span>. I have
+                            also contributed to a <span class="highlight">seven-segment display</span> image processing
+                            project as an <span class="highlight">Intern</span> at <span class="highlight">NPL</span>.
+                        </p>
+
+                        <p>Alongside frontend, I have a strong foundation in <span class="highlight">Data Structures and
+                                Algorithms (DSA)</span>, solving numerous problems on <span
+                                class="highlight">LeetCode</span>. Currently, I am interning in <span
+                                class="highlight">Web Developer</span> at <span class="highlight">Xarterian</span> in
+                            <span class="highlight">Gurgaon</span>, where I work on developing modern and responsive web
+                            applications.</p>
+
                         <div class="tab_title">
                             <p class="tab_link active_link" onclick="opentab('skills')">Skills</p>
                             <p class="tab_link" onclick="opentab('experience')">Experience</p>
                             <p class="tab_link" onclick="opentab('education')">Education</p>
+                            <p class="tab_link" onclick="opentab('certification')">Certification</p>
                         </div>
                         <div class="tab_content active_tab" id="skills">
                             <ul>
-                                <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
-                                <li><span>Web Development</span><br>Web app Development</li>
-                                <li><span>App Development</span><br>Building Android/ios apps</li>
+                                <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                                <li><span>Web Development</span><br>Frontend Developer</li>
+                                <li><span>App Development</span><br>Software Developer</li>
                             </ul>
                         </div>
                         <div class="tab_content" id="experience">
                             <ul>
                                 <li><span>2022-2023</span><br>Seven segment display using Deep Learning NPL</li>
-                                <li><span>2023-2024</span><br>Mern Stack Intern at Xarterian,Gurgaon</li>
-                                <li><span>2024-</span><br>Working</li>
+                                <li><span>2023-2024</span><br>Software Developer at Innotech,Gurgaon</li>
+                                <li><span>2024-2025</span><br>Working as Web Developer at LunarBounds</li>
+                                <li><span>2025-</span>Working as a Frontend Developer at Xarterian</li>
                             </ul>
                         </div>
                         <div class="tab_content" id="education">
                             <ul>
                                 <li><span>2005-2017</span><br>Jesus Mary Joseph</li>
-                                <li><span>2017-2019</span><br>St. Cecilia Public</li>
-                                <li><span>2020-2024</span><br>Bharati Vidyapeeth</li>
+                                <li><span>2017-2019</span><br>St. Cecilia Public School</li>
+                                <li><span>2020-2024</span><br>Bharati Vidyapeeth College of Engineering</li>
+                            </ul>
+                        </div>
+                        <div class="tab_content" id="certification">
+                            <ul>
+                                <li><span>2022</span><br>Mastery at DSA in Java from Coding Blocks</li>
+                                <li><span>2023</span><br>Time and Frequency from National Physical Laboratory</li>
+                                <li><span>2023</span><br>Completion from National Physical Laboratory</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!------------------------------------------services--------------------------------------------->
         <div id="services">
             <div class="container">
@@ -99,58 +113,54 @@
                         <h2>Web design</h2>
                         <p style="font-weight: lighter;">creation and maintenance of websites, focusing on aesthetics,
                             functionality, and user experience.</p>
-                        <a href="#">Learn more</a>
+                   
                     </div>
                     <div>
                         <i class="fa-solid fa-pen-nib"></i>
                         <h2>UI/UX design</h2>
                         <p style="font-weight: lighter;">creating user interfaces (UI) and ensuring a positive user
                             experience (UX).</p>
-                        <a href="#">Learn more</a>
+                    
                     </div>
                     <div>
-                        <i class="fa-brands fa-app-store-ios"></i>
-                        <h2>App design</h2>
-                        <p style="font-weight: lighter;">creating the visual layout and user interface for mobile
-                            applications.</p>
-                        <a href="#">Learn more</a>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Frontend Development</h2>
+                        <p style="font-weight: lighter;">Building responsive, interactive user interfaces using HTML, CSS,
+                            JavaScript, and modern frameworks.</p>
+                      
                     </div>
                 </div>
             </div>
-
-            <!----------------------------------------Portfolio------------------------------------------->
-            <div id="portfolio">
+            <!----------------------------------------Portfolio----------------------------------------------------------------->
+            <div id="portfolio">'
                 <div class="container">
                     <h1 class="subtitle">My Work</h1>
                     <div class="work_list">
                         <div class="work">
-                            <img src="https://tse3.mm.bing.net/th/id/OIP.4gxx_SYpn-2aGO5J8lh_FwHaE9?rs=1&pid=ImgDetMain"
+                            <img src="https://as1.ftcdn.net/v2/jpg/05/16/66/30/1000_F_516663067_h5lNELc5Ql9Wn1wllrmoWCamwvHX6lEK.jpg"
                                 height="300px">
                             <div class="layer">
-                                <h3>Social Media app</h3>
-                                <p>The app connects you to People around the world.Install from Play store</p>
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <h3>Ring immigration</h3>
+                                <p>This website helps users easily manage and track their visa applications, document submissions, and immigration updates in one place.</p>
+                                <a href="https://ringimmigration.com/index.html" target=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                         <div class="work">
-                            <img src="https://www.thehrbooth.co.uk/wp-content/uploads/2022/09/maxim-ilyahov-0aRycsfH57A-unsplash-scaled.jpg"
+                            <img src="https://www.cloudways.com/blog/wp-content/uploads/Ecommerce-Shopping-Infographics.png"
                                 height="300px">
                             <div class="layer">
-                                <h3>Music app</h3>
-                                <p>enables you to stream, download, and organize music with personalized recommendations
-                                    and
-                                    social features</p>
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <h3>Mad Commerce App</h3>
+                                <p>A modern e-commerce platform offering seamless product browsing, a responsive user interface, and smooth cart and checkout experience for online shopping.</p>
+
+                                <a href="https://rish150.github.io/madcommerce/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                         <div class="work">
                             <img src="https://th.bing.com/th/id/R.8ae3556f5bb68f7ca60abe3e972d34b8?rik=swDn38y1IWchqQ&riu=http%3a%2f%2fserendipitylabs.com%2fwp-content%2fuploads%2fbeing-smart-with-your-smartphone.jpg&ehk=WX8BH%2f6cLvutF3o3Gy7f%2f%2fyQM2z9utxbM5WF%2b0oB4Is%3d&risl=&pid=ImgRaw&r=0"
                                 height="300px">
                             <div class="layer">
-                                <h3>Shopping app</h3>
-                                <p>The app allows you to browse, purchase, and track orders of products directly from
-                                    their
-                                    mobile devices.</p>
+                                <h3>Rishnews</h3>
+                               <p>The app allows users to stay updated with the latest news by browsing headlines across various categories, searching for topics, and reading full articles in a responsive and user-friendly interface.</p>
                                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
@@ -158,8 +168,7 @@
                     <a href="#" class="btn">see more</a>
                 </div>
             </div>
-
-            <!-----------------------------------------------------contact---------------------------------------------->
+            <!-----------------------------------------------------contact------------------------------------------------>
             <div id="contact">
                 <div class="container">
                     <div class="row">
@@ -175,8 +184,8 @@
                                 <a href="https://www.linkedin.com/in/rishubh-gandhi-31656b219/"><i
                                         class="fa-brands fa-linkedin"></i></a>
                             </div>
-                            <a href="C:\Users\risha\Downloads\Rishubh (1) (1) (2).pdf" download target="_blank"
-                                class="btn btn2">Download CV</a>
+                            <a href="https://docs.google.com/document/d/1GbzLXtRW1y0VSQ9tkNhNf-U_M9JUXa-p/edit?usp=drive_web&ouid=104580419707549088081&rtpof=true" download target="_blank"
+                                class="btn btn2">Check CV</a>
                         </div>
                         <div class="contact-right">
                             <form name="submit-to-google-sheet">
@@ -190,7 +199,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <p>My first ever <i class="fa-solid fa-heart"></i> portfolio</p>
+                    <p>Made by Rishubh Gandhi</p>
                 </div>
             </div>
         </div>

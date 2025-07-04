@@ -17,6 +17,10 @@ body {
     background-color: black;
     color: white;
 }
+.fa-bars,
+.fa-circle-xmark {
+    display: none;
+}
 
 #header {
     width: 100%;
@@ -25,7 +29,10 @@ body {
     background-size: cover;
     background-position: center;
 }
-
+.header-text img{
+    height: 50vh;
+    width: 40vw;
+}
 .container {
     padding: 10px 10%;
 }

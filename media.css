@@ -1,39 +1,21 @@
+
 /* CSS for small screens */
 @media only screen and (max-width: 600px) {
-    @keyframes hamburger_puls {
-        0% {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0;
-            transform: scale(1.4);
-        }
-    }
-
-    .hamburger{
-        display: block;
-    }
-    .hamburger .bar{
-        display: block;
-        font-size: 8vw;
-        margin-left: 15vw;
-        cursor: pointer;
-        color: black;
-        
-    }
-
     nav ul {
-        /* background-color: #ff004f; */
         position: fixed;
         top: 0;
-        right: -200px;
+        right: -100%;
         width: 200px;
         height: 100vh;
+        background: #111;
         padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
+        z-index: 10;
+        flex-direction: column;
+        transition: 0.3s ease;
+    }
+
+    nav ul.show {
+        right: 0;
     }
 
     nav ul li {
@@ -57,44 +39,56 @@
     }
 
     .header-text {
-        margin-bottom: 60%;
+        margin: 50px 0;
         font-size: 16px;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 26px;
+        line-height: 1.4;
     }
 
     .logo {
         width: 90px;
     }
 
-    .header-text h1 {
+    .subtitle {
         font-size: 30px;
+        text-align: center;
     }
 
-    .subtitle {
-        font-size: 40px;
+    .row {
+        flex-direction: column;
     }
 
     .col_1,
     .col_2 {
-        flex-basis: 100%;
+        width: 100%;
+        text-align: center;
     }
 
-    .col_1 {
-        margin-bottom: 30px;
-        font-size: 14px;
+    .col_1 img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        display: block;
+        margin: 0 auto;
     }
 
-    .col_2 {
-        font-size: 14px;
+    .tab_title {
+        flex-direction: column;
+        align-items: center;
     }
 
     .tab_link {
-        font-size: 16px;
-        margin-right: 20px;
+        font-size: 14px;
+        margin: 5px 0;
     }
 
     .contact-left,
     .contact-right {
-        flex-basis: 100%;
+        width: 100%;
     }
 
     .copyright {
@@ -103,26 +97,19 @@
 
     .service_list {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
         margin-top: 50px;
+    }
+
+    .work_list {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
     }
 }
 
 /* CSS for large screens */
 @media only screen and (min-width: 600px) {
-    @keyframes hamburger_puls {
-        0% {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        100% {
-            opacity: 0;
-            transform: scale(1.4);
-        }
-    }
-
     .hamburger .bar{
         display: block;
         font-size: 25px;

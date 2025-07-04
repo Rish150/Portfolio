@@ -29,9 +29,9 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-            msg.innerHTML = "Message sent succesfully"
+            msg.innerHTMLL = "Message sent succesfully"
             setTimeout(function () {
-                msg.innerHTM = ""
+                msg.innerHTML = ""
             }, 5000)
             form.reset()
         })

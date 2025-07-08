@@ -17,9 +17,10 @@ body {
     background-color: black;
     color: white;
 }
-.fa-bars,
-.fa-circle-xmark {
-    display: none;
+@media only screen and (min-width: 601px) {
+  .fa-bars {
+    display: none !important;
+  }
 }
 
 #header {
@@ -51,7 +52,7 @@ nav {
 
 nav li {
     position: relative;
-    left: 100%;
+   left: 85%;
 }
 
 .logo {

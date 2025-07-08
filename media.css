@@ -49,10 +49,14 @@
   }
 
   /* Prevent global nav rules from interfering */
-  nav ul {
-    all: unset;
-  }
-
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
   /* Optional: dim background image behind header text */
   #header {
     background-image: url("https://tse1.mm.bing.net/th/id/OIP.DBd_H2Bey8RJUtOWXmvIhQHaJ3?rs=1&pid=ImgDetMain");

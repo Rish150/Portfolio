@@ -29,7 +29,12 @@ body {
     background-image: url("https://wallpaperaccess.com/full/5651999.jpg");
     background-size: cover;
     background-position: center;
+      margin-top: 0;
+  padding-top: 0;
 }
+
+
+
 .header-text img{
     height: 50vh;
     width: 40vw;
@@ -41,54 +46,63 @@ body {
 #sidemenu>i {
     display: none;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 
 nav {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 10%;
+  z-index: 100;
+  background: transparent;
+}
 
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
 }
 
 nav li {
-    position: relative;
-   left: 85%;
+
+  position: relative;
+  left: 650px; 
 }
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
 
 .logo {
     width: 140px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 10px 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
 
 .header-text {
     margin-top: 20%;

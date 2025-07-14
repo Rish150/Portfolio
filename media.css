@@ -31,6 +31,10 @@
     display: block;
     width: 100%;
   }
+  #sidemenu li a:active {
+  background-color: rgba(255, 255, 255, 0.2); /* Light black on tap */
+  opacity: 10;
+}
 
   .fa-bars {
     position: fixed;

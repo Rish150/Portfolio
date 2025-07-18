@@ -1,4 +1,5 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-device-width: 768px) {
+
   #sidemenu {
     position: fixed;
     top: 0;
@@ -34,7 +35,7 @@
   #sidemenu li a:active {
   background-color: rgba(255, 255, 255, 0.2); /* Light black on tap */
   opacity: 10;
-}
+ }
 
   .fa-bars {
     position: fixed;
@@ -47,21 +48,20 @@
     display: block;
   }
 
-  /* Hide close icon if not using it */
+
   .fa-circle-xmark {
     display: none;
   }
 
-  /* Prevent global nav rules from interfering */
-nav ul {
+ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-  /* Optional: dim background image behind header text */
+ }
+
   #header {
     background-image: url("https://tse1.mm.bing.net/th/id/OIP.DBd_H2Bey8RJUtOWXmvIhQHaJ3?rs=1&pid=ImgDetMain");
     background-size: cover;
@@ -125,7 +125,7 @@ nav ul {
     grid-gap: 40px;
     margin-top: 50px;
   }
-}
+ }
 
 /* Large screens */
 @media only screen and (min-width: 600px) {

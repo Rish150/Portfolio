@@ -1,208 +1,428 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <script src="https://kit.fontawesome.com/535168dafd.js" crossorigin="anonymous"></script>
-</head>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script
+      src="https://kit.fontawesome.com/535168dafd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <body>
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
     <div id="main">
-      
-
-
-<div id="header">
-    <nav>
-  <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
-  <ul id="sidemenu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-  <div class="header-text">
-    <h1>Hi, I am <span><strong>Rishubh Gandhi</strong></span> from India</h1>
-  </div>
-</div>
-
-            </div>
-        <!-------------------------------------------about------------------------------------------------->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col_1">
-                        <img src="alaminxyz.gif" alt="working" width="400" height="300">
-                    </div>
-                    <div class="col_2">
-                        <h1 class="subtitle">About Me</h1>
-                        <p>Hello! I am <span class="highlight">Rishubh Gandhi</span>, a passionate Software Engineering
-                            student at <span class="highlight">Bharati Vidyapeeth College of Engineering</span>. I
-                            specialize in <span class="highlight">frontend development</span> and have worked on several
-                            projects using <span class="highlight">HTML</span>, <span class="highlight">CSS</span>,
-                            <span class="highlight">JavaScript</span>, and <span class="highlight">React</span>. I have
-                            also contributed to a <span class="highlight">seven-segment display</span> image processing
-                            project as an <span class="highlight">Intern</span> at <span class="highlight">NPL</span>.
-                        </p>
-
-                        <p>Alongside frontend, I have a strong foundation in <span class="highlight">Data Structures and
-                                Algorithms (DSA)</span>, solving numerous problems on <span
-                                class="highlight">LeetCode</span>. Currently, I am interning in <span
-                                class="highlight">Web Developer</span> at <span class="highlight">Xarterian</span> in
-                            <span class="highlight">Gurgaon</span>, where I work on developing modern and responsive web
-                            applications.</p>
-
-                        <div class="tab_title">
-                            <p class="tab_link active_link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab_link" onclick="opentab('experience')">Experience</p>
-                            <p class="tab_link" onclick="opentab('education')">Education</p>
-                            <p class="tab_link" onclick="opentab('certification')">Certification</p>
-                        </div>
-                        <div class="tab_content active_tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web interfaces</li>
-                                <li><span>Web Development</span><br>Frontend Developer</li>
-                                <li><span>App Development</span><br>Software Developer</li>
-                            </ul>
-                        </div>
-                        <div class="tab_content" id="experience">
-                            <ul>
-                                <li><span>2022-2023</span><br>Seven segment display using Deep Learning NPL</li>
-                                <li><span>2023-2024</span><br>Software Developer at Innotech,Gurgaon</li>
-                                <li><span>2024-2025</span><br>Working as Web Developer at LunarBounds</li>
-                                <li><span>2025-</span>Working as a Frontend Developer at Xarterian</li>
-                            </ul>
-                        </div>
-                        <div class="tab_content" id="education">
-                            <ul>
-                                <li><span>2005-2017</span><br>Jesus Mary Joseph</li>
-                                <li><span>2017-2019</span><br>St. Cecilia Public School</li>
-                                <li><span>2020-2024</span><br>Bharati Vidyapeeth College of Engineering</li>
-                            </ul>
-                        </div>
-                        <div class="tab_content" id="certification">
-                            <ul>
-                                <li><span>2022</span><br>Mastery at DSA in Java from Coding Blocks</li>
-                                <li><span>2023</span><br>Time and Frequency from National Physical Laboratory</li>
-                                <li><span>2023</span><br>Completion from National Physical Laboratory</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div id="header">
+        <nav>
+          <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p class="intro-line">Hi, I’m</p>
+          <h1>
+            <span class="name">Rishubh Gandhi</span>
+          </h1>
+          <h2 class="role">
+            <span id="dynamic-role"></span>
+          </h2>
         </div>
-        <!------------------------------------------services--------------------------------------------->
-        <div id="services">
-            <div class="container">
-                <h1 class="subtitle">My services</h1>
-                <div class="service_list">
-                    <div>
-                        <i class="fa-solid fa-web-awesome"></i>
-                        <h2>Web design</h2>
-                        <p style="font-weight: lighter;">creation and maintenance of websites, focusing on aesthetics,
-                            functionality, and user experience.</p>
-                   
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-pen-nib"></i>
-                        <h2>UI/UX design</h2>
-                        <p style="font-weight: lighter;">creating user interfaces (UI) and ensuring a positive user
-                            experience (UX).</p>
-                    
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Frontend Development</h2>
-                        <p style="font-weight: lighter;">Building responsive, interactive user interfaces using HTML, CSS,
-                            JavaScript, and modern frameworks.</p>
-                      
-                    </div>
-                </div>
-            </div>
-            <!----------------------------------------Portfolio----------------------------------------------------------------->
-            <div id="portfolio">'
-                <div class="container">
-                    <h1 class="subtitle">My Work</h1>
-                    <div class="work_list">
-                        <div class="work">
-                            <img src="https://as1.ftcdn.net/v2/jpg/05/16/66/30/1000_F_516663067_h5lNELc5Ql9Wn1wllrmoWCamwvHX6lEK.jpg"
-                                height="300px">
-                            <div class="layer">
-                                <h3>Ring immigration</h3>
-                                <p>This website helps users easily manage and track their visa applications, document submissions, and immigration updates in one place.</p>
-                                <a href="https://ringimmigration.com/index.html" target=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="https://www.cloudways.com/blog/wp-content/uploads/Ecommerce-Shopping-Infographics.png"
-                                height="300px">
-                            <div class="layer">
-                                <h3>Mad Commerce App</h3>
-                                <p>A modern e-commerce platform offering seamless product browsing, a responsive user interface, and smooth cart and checkout experience for online shopping.</p>
+      </div>
+    </div>
+    <!-------------------------------------------about------------------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col_1">
+            <img src="alaminxyz.gif" alt="working" width="400" height="300" />
+          </div>
+          <div class="col_2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Hi, I’m <span class="highlight">Rishubh Gandhi</span>, a Software
+              Engineer with a strong focus on
+              <span class="highlight">frontend development</span>,
+              <span class="highlight">UI/UX design</span>, and
+              <span class="highlight">automation-driven workflows</span>.
+            </p>
 
-                                <a href="https://rish150.github.io/madcommerce/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="https://th.bing.com/th/id/R.8ae3556f5bb68f7ca60abe3e972d34b8?rik=swDn38y1IWchqQ&riu=http%3a%2f%2fserendipitylabs.com%2fwp-content%2fuploads%2fbeing-smart-with-your-smartphone.jpg&ehk=WX8BH%2f6cLvutF3o3Gy7f%2f%2fyQM2z9utxbM5WF%2b0oB4Is%3d&risl=&pid=ImgRaw&r=0"
-                                height="300px">
-                            <div class="layer">
-                                <h3>Rishnews</h3>
-                               <p>The app allows users to stay updated with the latest news by browsing headlines across various categories, searching for topics, and reading full articles in a responsive and user-friendly interface.</p>
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn">see more</a>
-                </div>
+            <p>
+              I’ve worked on responsive web applications, high-converting
+              landing pages, and scalable frontend systems using
+              <span class="highlight">HTML, CSS, JavaScript</span> and modern
+              design principles. I enjoy building interfaces that are fast,
+              clean, and conversion-focused.
+            </p>
+
+            <div class="tab_title">
+              <p class="tab_link active_link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab_link" onclick="opentab('experience')">Experience</p>
+              <p class="tab_link" onclick="opentab('education')">Education</p>
+              <p class="tab_link" onclick="opentab('certification')">
+                Certification
+              </p>
             </div>
-            <!-----------------------------------------------------contact------------------------------------------------>
-            <div id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="contact-left">
-                            <h1 class="subtitle">Contact me</h1>
-                            <p><i class="fa-solid fa-paper-plane"></i>rishabhgandhi1507@gmail.com</p>
-                            <p><i class="fa-solid fa-phone"></i>9625258262</p>
-                            <div class="social_icon">
-                                <a href="https://github.com/Rish150"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://x.com/debro1507"><i class="fa-brands fa-twitter-square"></i></a>
-                                <a href="https://www.instagram.com/debroglie1507/"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/rishubh-gandhi-31656b219/"><i
-                                        class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                            <a href="https://drive.google.com/file/d/182dF-jZ5kHxe394k4obmnNZEh5_c1Pfd/view?usp=sharing" download target="_blank"
-                                class="btn btn2">Check CV</a>
-                        </div>
-                        <div class="contact-right">
-                            <form name="submit-to-google-sheet">
-                                <input type="text" name="Name" placeholder="Your name">
-                                <input type="email" name="Email" placeholder="Your email">
-                                <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                                <button type="submit" class="btn btn2 btn3">Send</button>
-                            </form>
-                            <span id="msg"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>Made by Rishubh Gandhi</p>
-                </div>
+            <div class="tab_content active_tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />
+                  HTML, CSS, JavaScript, Responsive UI, Performance Optimization
+                </li>
+                <li>
+                  <span>UI/UX & Design</span><br />
+                  User-centric layouts, Mobile-first design, Figma,
+                  Accessibility
+                </li>
+                <li>
+                  <span>Landing Pages & Funnels</span><br />
+                  High-converting pages, CTA placement, CRO, Lead capture flows
+                </li>
+                <li>
+                  <span>Automation & Scripting</span><br />
+                  JavaScript automation, DOM-based logic, Workflow optimization
+                </li>
+              </ul>
             </div>
+
+            <div class="tab_content" id="experience">
+              <ul>
+                <li>
+                  <span>2025 – Present</span><br />
+                  Web Designer & Automation Developer — Growthify Media
+                  <br />
+                </li>
+
+                <li>
+                  <span>2025</span><br />
+                  Associate Software Developer — Innotech Works
+                </li>
+
+                <li>
+                  <span>2024</span><br />
+                  Web Developer (Hybrid) — X Arterian
+                </li>
+              </ul>
+            </div>
+            <div class="tab_content" id="education">
+              <ul>
+                <li><span>2005-2017</span><br />Jesus Mary Joseph</li>
+                <li><span>2017-2019</span><br />St. Cecilia Public School</li>
+                <li>
+                  <span>2020-2024</span><br />Bharati Vidyapeeth College of
+                  Engineering
+                </li>
+              </ul>
+            </div>
+            <div class="tab_content" id="certification">
+              <ul>
+                <li>
+                  <span>2022</span><br />Mastery at DSA in Java from Coding
+                  Blocks
+                </li>
+                <li>
+                  <span>2023</span><br />Time and Frequency from National
+                  Physical Laboratory
+                </li>
+                <li>
+                  <span>2023</span><br />Completion from National Physical
+                  Laboratory
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-</body>
-<script src="script.js"></script>
+      </div>
+    </div>
+    <!------------------------------------------services--------------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My services</h1>
+        <div class="service_list">
+          <!-- Card 1 -->
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend Development</h2>
+              </div>
+              <div class="flip-back">
+                <p>
+                  Responsive, high-performance web interfaces using HTML, CSS,
+                  JavaScript with strong UX and accessibility focus.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <!-- Card 2 -->
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>UI/UX Design</h2>
+              </div>
+              <div class="flip-back">
+                <p>
+                  Mobile-first layouts, clean visual hierarchy, and user-centric
+                  interfaces designed for clarity and engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <i class="fa-solid fa-bolt"></i>
+                <h2>Landing Pages & Funnels</h2>
+              </div>
+              <div class="flip-back">
+                <p>
+                  High-converting landing pages, CTA optimization, and lead
+                  generation funnels focused on CRO.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <i class="fa-solid fa-robot"></i>
+                <h2>Automation & Workflow</h2>
+              </div>
+              <div class="flip-back">
+                <p>
+                  JavaScript-based automation, DOM-style scripting, and workflow
+                  optimization to reduce manual effort.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 (NEW) -->
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Software Development</h2>
+              </div>
+              <div class="flip-back">
+                <p>
+                  Strong foundation in Java, DSA, and problem-solving with
+                  experience building scalable and maintainable software
+                  solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 (NEW) -->
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <i class="fa-solid fa-plug"></i>
+                <h2>API & Integration</h2>
+              </div>
+              <div class="flip-back">
+                <p>
+                  REST API integration, dynamic data rendering, and seamless
+                  frontend– backend communication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------Portfolio----------------------------------------------------------------->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="subtitle">My Work</h1>
+          <div class="work_list">
+            <div class="work">
+              <img
+                src="https://as1.ftcdn.net/v2/jpg/05/16/66/30/1000_F_516663067_h5lNELc5Ql9Wn1wllrmoWCamwvHX6lEK.jpg"
+                height="300px"
+              />
+              <div class="layer">
+                <h3>Ring immigration</h3>
+                <p>
+                  This website helps users easily manage and track their visa
+                  applications, document submissions, and immigration updates in
+                  one place.
+                </p>
+                <a href="https://ringimmigration.com/index.html" target=""
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="https://www.cloudways.com/blog/wp-content/uploads/Ecommerce-Shopping-Infographics.png"
+                height="300px"
+              />
+              <div class="layer">
+                <h3>Mad Commerce App</h3>
+                <p>
+                  A modern e-commerce platform offering seamless product
+                  browsing, a responsive user interface, and smooth cart and
+                  checkout experience for online shopping.
+                </p>
+
+                <a href="https://rish150.github.io/madcommerce/" target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="https://th.bing.com/th/id/R.8ae3556f5bb68f7ca60abe3e972d34b8?rik=swDn38y1IWchqQ&riu=http%3a%2f%2fserendipitylabs.com%2fwp-content%2fuploads%2fbeing-smart-with-your-smartphone.jpg&ehk=WX8BH%2f6cLvutF3o3Gy7f%2f%2fyQM2z9utxbM5WF%2b0oB4Is%3d&risl=&pid=ImgRaw&r=0"
+                height="300px"
+              />
+              <div class="layer">
+                <h3>Rishnews</h3>
+                <p>
+                  The app allows users to stay updated with the latest news by
+                  browsing headlines across various categories, searching for
+                  topics, and reading full articles in a responsive and
+                  user-friendly interface.
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work extra-work">
+              <img
+                src="https://lh6.googleusercontent.com/ho8AG6_zVZHlAcAIt4azImwZbmG-B_YEgp4mnOTA4YMalZwUr4aytXRy7z92HRd9qxXntF4FR_fQaztzNP8x3JIFygyTlvf_4HK-rE2at4IXSZcZ65AqP7OjIstHezjsUs2ci1-euW1C"
+                height="300px"
+              />
+              <div class="layer">
+                <h3>High-Converting Landing Pages</h3>
+                <p>
+                  Designed and developed premium, conversion-focused landing
+                  pages for coaches and consultants, optimized for leads,
+                  bookings, and mobile performance.
+                </p>
+                <a href="https://workshop.healerjanhavi.com/karmic"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work extra-work">
+              <img
+                src="https://xperttimes.com/wp-content/uploads/2024/10/XTNPL-Pic-60.jpg"
+                height="300px"
+              />
+              <div class="layer">
+                <h3>Growthify Media App</h3>
+                <p>
+                  Designed and developed a responsive internal dashboard for
+                  Growthify Media with automation workflows and performance
+                  tracking interfaces.
+                </p>
+                <a href="https://app.growthifymedia.com"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work extra-work">
+              <img
+                src="https://img.freepik.com/premium-vector/flat-abstract-business-youtube-thumbnail_23-2148914039.jpg?semt=ais_hybrid"
+                height="300px"
+              />
+              <div class="layer">
+                <h3>Agashe Store</h3>
+                <p>
+                  Designed and developed a responsive premium e-commerce website
+                  for a multi-designer fashion brand featuring curated
+                  collections and an intuitive shopping experience.
+                </p>
+                <a href="https://www.agashestore.com/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <button class="btn" id="toggleWork">See more</button>
+        </div>
+      </div>
+      <!-----------------------------------------------------contact------------------------------------------------>
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="subtitle">Contact me</h1>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i
+                >rishabhgandhi1507@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>9625258262</p>
+              <div class="social_icon">
+                <a href="https://github.com/Rish150"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://x.com/debro1507"
+                  ><i class="fa-brands fa-twitter-square"></i
+                ></a>
+                <a href="https://www.instagram.com/debroglie1507/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/rishubh-gandhi-31656b219/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+              <a
+                href="https://docs.google.com/document/d/1IDveBSW1fgck6YTceUM5RhxQ4Wq16sSo/edit?usp=sharing&ouid=104580419707549088081&rtpof=true&sd=true"
+                download
+                target="_blank"
+                class="btn btn2"
+                >Check CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" />
+                <input type="email" name="Email" placeholder="Your email" />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your message"
+                ></textarea>
+                <button type="submit" class="btn btn2 btn3">Send</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Made by Rishubh Gandhi</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

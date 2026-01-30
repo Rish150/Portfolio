@@ -8,10 +8,11 @@
     font-weight: bold;
     scroll-behavior: smooth;
 }
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
+
+#main {
+    overflow: hidden;
 }
+
 body {
     background-color: black;
     color: white;
@@ -243,11 +244,6 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-@media (max-width: 768px) {
-  .row {
-    justify-content: center;
-  }
 }
 
 .col_1 {

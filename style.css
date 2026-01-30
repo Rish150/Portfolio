@@ -12,11 +12,6 @@ html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
-
-#main {
-    overflow: hidden;
-}
-
 body {
     background-color: black;
     color: white;

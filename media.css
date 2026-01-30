@@ -62,15 +62,8 @@ nav ul {
   width: 100%;
 }
   /* Optional: dim background image behind header text */
-  #header {
-    background-image: url("https://tse1.mm.bing.net/th/id/OIP.DBd_H2Bey8RJUtOWXmvIhQHaJ3?rs=1&pid=ImgDetMain");
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-  }
-
   .header-text {
-    margin-bottom: 60%;
+    margin-bottom: 40px;
     font-size: 16px;
     padding: 0 10px;
     text-align: center;
